@@ -191,6 +191,7 @@ class _CartPageState extends ConsumerState<CartPage> {
                                 padding: EdgeInsets.only(left: 15.w),
                                 child: TextFormField(
                                   focusNode: couponFieldFocusNode,
+                                  
                                   cursorColor: ColorConstants.greenColor,
                                   style: GoogleFonts.nunito(
                                     fontSize: 17.sp,

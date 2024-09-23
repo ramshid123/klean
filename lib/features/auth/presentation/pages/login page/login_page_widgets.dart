@@ -66,6 +66,7 @@ class LoginPageWidgets {
       width: 60.r,
       child: TextFormField(
         controller: textController,
+          cursorColor: Colors.black,
         onSaved: (pin) {},
         onChanged: (pin) {
           if (pin.isNotEmpty) {
@@ -107,6 +108,7 @@ class LoginPageWidgets {
         kHeight(10.h),
         TextFormField(
           controller: textController,
+          cursorColor: Colors.black,
           style: GoogleFonts.nunito(
             fontSize: 15,
             fontWeight: FontWeight.w700,

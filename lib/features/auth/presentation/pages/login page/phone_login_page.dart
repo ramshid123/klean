@@ -95,6 +95,8 @@ class PhoneLoginPage extends ConsumerWidget {
                           children: [
                             Expanded(
                               child: TextFormField(
+          cursorColor: Colors.black,
+
                                 controller: phoneTextCont,
                                 readOnly: true,
                                 style: GoogleFonts.nunito(
