@@ -129,8 +129,8 @@ class CartPageWidgets {
         borderRadius: BorderRadius.circular(8.r),
         boxShadow: [
           BoxShadow(
-            color: Color(0xFF000000).withOpacity(0.1),
-            offset: Offset(0, 0),
+            color: const Color(0xFF000000).withOpacity(0.1),
+            offset: const Offset(0, 0),
             blurRadius: 14,
             spreadRadius: -1,
           ),
@@ -181,7 +181,7 @@ class CartPageWidgets {
                           ),
                       child: Container(
                         padding: EdgeInsets.all(5.r),
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           gradient: ColorConstants.greenGradient,
                           shape: BoxShape.circle,
                         ),

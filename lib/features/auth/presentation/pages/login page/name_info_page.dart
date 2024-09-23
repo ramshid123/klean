@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:klean/core/providers/user.dart';
 import 'package:klean/core/theme/palette.dart';
 import 'package:klean/core/widgets/common.dart';
 import 'package:klean/core/widgets/loading.dart';
@@ -17,7 +16,7 @@ class NameInfoPage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final uid = ref.read(currentUserNotifierProvider)!.uid;
+    // final uid = ref.read(currentUserNotifierProvider)!.uid;
 
     final size = MediaQuery.of(context).size;
     return Scaffold(

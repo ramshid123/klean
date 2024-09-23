@@ -1,8 +1,6 @@
-import 'dart:developer';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:get_it/get_it.dart';
 import 'package:klean/features/auth/data/data%20source/remote_data_source.dart';
 import 'package:klean/features/auth/data/repository/repository.dart';
@@ -21,7 +19,6 @@ import 'package:klean/features/cart/domain/usecases/get_all_carts.dart';
 import 'package:klean/features/cart/domain/usecases/get_one_cart.dart';
 import 'package:klean/features/cart/domain/usecases/update_carts.dart';
 import 'package:klean/features/cart/presentation/provider/cart_provider.dart';
-import 'package:klean/firebase_options_dev.dart';
 
 final serviceLocator = GetIt.instance;
 

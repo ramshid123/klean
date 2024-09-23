@@ -92,7 +92,7 @@ class AuthRepositoryImpl implements AuthRepository {
   Future<Either<KFailure, void>> updateBio(
       {required String name, String email = '', String phoneNo = ''}) async {
     try {
-      final response = await authRemoteDataSource.updateBio(
+      await authRemoteDataSource.updateBio(
           name: name, email: email, phoneNo: phoneNo);
 
       return right(null);

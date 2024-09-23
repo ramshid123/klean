@@ -3,11 +3,8 @@ import 'package:recase/recase.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:go_router/go_router.dart';
 import 'package:klean/core/entity/user_entity.dart';
 import 'package:klean/core/providers/user.dart';
-import 'package:klean/core/routes/route_names.dart';
-import 'package:klean/core/routes/routes.dart';
 import 'package:klean/core/theme/palette.dart';
 import 'package:klean/core/widgets/bottom_nav_bar.dart';
 import 'package:klean/core/widgets/common.dart';
@@ -26,7 +23,7 @@ class _ProfilePageState extends ConsumerState<ProfilePage> {
 
   @override
   void initState() {
-    // TODO: implement initState
+    
     currentUser = ref.read(currentUserNotifierProvider);
 
     super.initState();

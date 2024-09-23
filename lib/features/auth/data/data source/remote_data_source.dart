@@ -3,12 +3,9 @@ import 'dart:developer';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:klean/core/constants/firestore/firestore_collections.dart';
 import 'package:klean/core/error/exception.dart';
-import 'package:klean/core/routes/route_names.dart';
 import 'package:klean/features/auth/data/models/user_model.dart';
 
 abstract interface class AuthRemoteDataSource {

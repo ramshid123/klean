@@ -1,4 +1,3 @@
-import 'package:flutter/services.dart';
 import 'package:klean/core/entity/product_entity.dart';
 
 List<ProductEntity> dummyProducts = _dummyJson

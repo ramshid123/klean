@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:klean/core/theme/palette.dart';
-import 'package:klean/firebase_options_dev.dart';
 import 'package:klean/flavors.dart';
 import 'package:klean/init_dependencies.dart';
 import 'app.dart';

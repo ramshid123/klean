@@ -1,9 +1,7 @@
-import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:klean/core/constants/dummy/products.dart';
 import 'package:klean/core/entity/cart_entity.dart';
 import 'package:klean/core/entity/product_entity.dart';
 import 'package:klean/core/theme/palette.dart';
@@ -52,8 +50,8 @@ class ServicesPageWidgets {
         borderRadius: BorderRadius.circular(13.r),
         boxShadow: [
           BoxShadow(
-            color: Color(0xFF000000).withOpacity(0.1),
-            offset: Offset(0, 0),
+            color: const Color(0xFF000000).withOpacity(0.1),
+            offset: const Offset(0, 0),
             blurRadius: 14,
             spreadRadius: -1,
           ),
@@ -121,7 +119,7 @@ class ServicesPageWidgets {
             decoration: BoxDecoration(
               // color: Colors.black12,
               gradient: cartItem.counts > 0
-                  ? LinearGradient(colors: [Colors.black12, Colors.black12])
+                  ? const LinearGradient(colors: [Colors.black12, Colors.black12])
                   : ColorConstants.greenGradient,
               borderRadius: BorderRadius.only(
                 bottomRight: Radius.circular(13.r),

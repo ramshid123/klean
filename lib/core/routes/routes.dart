@@ -3,7 +3,7 @@ import 'package:klean/core/routes/route_names.dart';
 import 'package:klean/features/auth/presentation/pages/login%20page/login_page.dart';
 import 'package:klean/features/auth/presentation/pages/login%20page/name_info_page.dart';
 import 'package:klean/features/auth/presentation/pages/login%20page/otp_page.dart';
-import 'package:klean/features/auth/presentation/pages/login%20page/phone%20login%20page.dart';
+import 'package:klean/features/auth/presentation/pages/login%20page/phone_login_page.dart';
 import 'package:klean/features/auth/presentation/pages/splash%20screen/splash_screen.dart';
 import 'package:klean/features/cart/presentation/pages/cart%20page/cart_page.dart';
 import 'package:klean/features/cart/presentation/pages/home%20page/home_page.dart';

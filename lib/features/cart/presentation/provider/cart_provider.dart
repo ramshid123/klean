@@ -2,7 +2,6 @@ import 'dart:developer';
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:klean/core/entity/cart_entity.dart';
-import 'package:klean/core/entity/product_entity.dart';
 import 'package:klean/features/cart/domain/usecases/get_all_carts.dart';
 import 'package:klean/features/cart/domain/usecases/get_one_cart.dart';
 import 'package:klean/features/cart/domain/usecases/update_carts.dart';

@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:klean/core/routes/route_names.dart';
 import 'package:klean/core/theme/palette.dart';
 import 'package:klean/core/widgets/common.dart';
 import 'package:klean/core/widgets/loading.dart';
 import 'package:klean/features/auth/presentation/pages/login%20page/login_page_widgets.dart';
 import 'package:klean/features/auth/presentation/provider/usecase_providers.dart';
-import 'package:klean/features/cart/presentation/pages/home%20page/home_page.dart';
 import 'package:klean/features/cart/presentation/provider/filter_provider.dart';
 
 class PhoneLoginPage extends ConsumerWidget {
@@ -78,8 +75,8 @@ class PhoneLoginPage extends ConsumerWidget {
                           borderRadius: BorderRadius.circular(20.r),
                           boxShadow: [
                             BoxShadow(
-                              color: Color(0xFF000000).withOpacity(0.3),
-                              offset: Offset(0, 0),
+                              color: const Color(0xFF000000).withOpacity(0.3),
+                              offset: const Offset(0, 0),
                               blurRadius: 14,
                               spreadRadius: -1,
                             ),
@@ -228,8 +225,8 @@ class PhoneLoginPage extends ConsumerWidget {
                             borderRadius: BorderRadius.circular(15.r),
                             boxShadow: [
                               BoxShadow(
-                                color: Color(0xFF000000).withOpacity(0.1),
-                                offset: Offset(0, 0),
+                                color: const Color(0xFF000000).withOpacity(0.1),
+                                offset: const Offset(0, 0),
                                 blurRadius: 14,
                                 spreadRadius: -1,
                               ),

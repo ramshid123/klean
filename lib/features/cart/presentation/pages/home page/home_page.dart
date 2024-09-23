@@ -1,7 +1,6 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
@@ -13,6 +12,7 @@ import 'package:klean/core/routes/route_names.dart';
 import 'package:klean/core/theme/palette.dart';
 import 'package:klean/core/widgets/bottom_nav_bar.dart';
 import 'package:klean/core/widgets/common.dart';
+// ignore: unused_import
 import 'package:klean/features/auth/presentation/provider/usecase_providers.dart';
 import 'package:klean/features/cart/presentation/pages/home%20page/home_page_widgets.dart';
 import 'package:klean/features/cart/presentation/provider/cart_provider.dart';
@@ -25,8 +25,6 @@ class HomePage extends ConsumerStatefulWidget {
 }
 
 class _HomePageState extends ConsumerState<HomePage> {
-  final _scrollController = ScrollController();
-
   List<CartEntity> productsInCart = [];
   late String uid;
 
@@ -94,8 +92,8 @@ class _HomePageState extends ConsumerState<HomePage> {
                               borderRadius: BorderRadius.circular(15.r),
                               boxShadow: [
                                 BoxShadow(
-                                  color: Color(0xFF000000).withOpacity(0.1),
-                                  offset: Offset(0, 0),
+                                  color: const Color(0xFF000000).withOpacity(0.1),
+                                  offset: const Offset(0, 0),
                                   blurRadius: 14,
                                   spreadRadius: -1,
                                 ),
@@ -145,8 +143,8 @@ class _HomePageState extends ConsumerState<HomePage> {
                         borderRadius: BorderRadius.circular(10.r),
                         boxShadow: [
                           BoxShadow(
-                            color: Color(0xFF000000).withOpacity(0.2),
-                            offset: Offset(0, 0),
+                            color: const Color(0xFF000000).withOpacity(0.2),
+                            offset: const Offset(0, 0),
                             blurRadius: 14,
                             spreadRadius: -1,
                           ),
@@ -178,7 +176,7 @@ class _HomePageState extends ConsumerState<HomePage> {
                                   // ),
                                   filled: true,
                                   fillColor: Colors.white,
-                                  border: UnderlineInputBorder(
+                                  border: const UnderlineInputBorder(
                                     borderSide: BorderSide.none,
                                   ),
                                 ),
@@ -202,7 +200,7 @@ class _HomePageState extends ConsumerState<HomePage> {
                       ),
                     ),
                     kHeight(30.h),
-              
+
                     Container(
                       padding: EdgeInsets.symmetric(
                           horizontal: 20.w, vertical: 15.h),
@@ -211,8 +209,8 @@ class _HomePageState extends ConsumerState<HomePage> {
                         borderRadius: BorderRadius.circular(8.r),
                         boxShadow: [
                           BoxShadow(
-                            color: Color(0xFF000000).withOpacity(0.2),
-                            offset: Offset(0, 0),
+                            color: const Color(0xFF000000).withOpacity(0.2),
+                            offset: const Offset(0, 0),
                             blurRadius: 14,
                             spreadRadius: -1,
                           ),
@@ -254,8 +252,8 @@ class _HomePageState extends ConsumerState<HomePage> {
                               HomePageWidgets.availableServiceItem(
                                   text: 'Plumbing', svgIcon: 'plumbing.svg'),
                               GestureDetector(
-                                onTap: () => context
-                                    .goNamed(RouteNames.serviceListPage),
+                                onTap: () =>
+                                    context.goNamed(RouteNames.serviceListPage),
                                 child: HomePageWidgets.availableServiceItem(
                                   text: 'See All',
                                   svgIcon: 'right_arrow.svg',
@@ -267,7 +265,7 @@ class _HomePageState extends ConsumerState<HomePage> {
                         ],
                       ),
                     ),
-              
+
                     kHeight(30.h),
                     Row(
                       children: [

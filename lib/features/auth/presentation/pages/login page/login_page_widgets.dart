@@ -3,7 +3,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:klean/core/theme/palette.dart';
 import 'package:klean/core/widgets/common.dart';
 import 'package:klean/features/auth/presentation/provider/provider.dart';
 
@@ -33,8 +32,8 @@ class LoginPageWidgets {
             borderRadius: BorderRadius.circular(15.r),
             boxShadow: [
               BoxShadow(
-                color: Color(0xFF000000).withOpacity(0.1),
-                offset: Offset(0, 0),
+                color: const Color(0xFF000000).withOpacity(0.1),
+                offset: const Offset(0, 0),
                 blurRadius: 14,
                 spreadRadius: -1,
               ),

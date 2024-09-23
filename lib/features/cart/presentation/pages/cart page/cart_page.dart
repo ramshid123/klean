@@ -8,13 +8,12 @@ import 'package:klean/core/entity/cart_entity.dart';
 import 'package:klean/core/providers/user.dart';
 import 'package:klean/core/theme/palette.dart';
 import 'package:klean/core/widgets/common.dart';
-import 'package:klean/features/auth/presentation/provider/usecase_providers.dart';
 import 'package:klean/features/cart/presentation/pages/cart%20page/cart_page_widgets.dart';
 import 'package:klean/features/cart/presentation/provider/cart_provider.dart';
 
 class CartPage extends ConsumerStatefulWidget {
   final String parentRoute;
-  CartPage({super.key, required this.parentRoute});
+  const CartPage({super.key, required this.parentRoute});
 
   @override
   ConsumerState<CartPage> createState() => _CartPageState();
@@ -152,8 +151,8 @@ class _CartPageState extends ConsumerState<CartPage> {
                           borderRadius: BorderRadius.circular(11.r),
                           boxShadow: [
                             BoxShadow(
-                              color: Color(0xFF000000).withOpacity(0.1),
-                              offset: Offset(0, 0),
+                              color: const Color(0xFF000000).withOpacity(0.1),
+                              offset: const Offset(0, 0),
                               blurRadius: 14,
                               spreadRadius: -1,
                             ),
@@ -235,7 +234,7 @@ class _CartPageState extends ConsumerState<CartPage> {
                                     //   fontSize: 1.sp,
                                     //   color: Colors.black38,
                                     // ),
-                                    border: UnderlineInputBorder(
+                                    border: const UnderlineInputBorder(
                                       borderSide: BorderSide.none,
                                     ),
                                   ),
@@ -251,7 +250,7 @@ class _CartPageState extends ConsumerState<CartPage> {
                         children: [
                           Container(
                             padding: EdgeInsets.all(5.r),
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               gradient: ColorConstants.greenGradient,
                               shape: BoxShape.circle,
                             ),
@@ -282,8 +281,8 @@ class _CartPageState extends ConsumerState<CartPage> {
                           borderRadius: BorderRadius.circular(11.r),
                           boxShadow: [
                             BoxShadow(
-                              color: Color(0xFF000000).withOpacity(0.1),
-                              offset: Offset(0, 0),
+                              color: const Color(0xFF000000).withOpacity(0.1),
+                              offset: const Offset(0, 0),
                               blurRadius: 14,
                               spreadRadius: -1,
                             ),
@@ -386,8 +385,8 @@ class _CartPageState extends ConsumerState<CartPage> {
                     color: Colors.white,
                     boxShadow: [
                       BoxShadow(
-                        color: Color(0xFF000000).withOpacity(0.3),
-                        offset: Offset(0, 0),
+                        color: const Color(0xFF000000).withOpacity(0.3),
+                        offset: const Offset(0, 0),
                         blurRadius: 14,
                         spreadRadius: -1,
                       ),

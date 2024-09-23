@@ -1,11 +1,7 @@
-import 'dart:developer';
 
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:klean/core/routes/routes.dart';
-import 'package:klean/features/auth/presentation/pages/login%20page/login_page.dart';
-import 'package:klean/features/cart/presentation/pages/home%20page/home_page.dart';
 
 import 'flavors.dart';
 

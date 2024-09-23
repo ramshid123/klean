@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:klean/core/providers/user.dart';
 import 'package:klean/core/routes/route_names.dart';
-import 'package:klean/core/routes/routes.dart';
 import 'package:klean/core/entity/user_entity.dart';
 import 'package:klean/features/auth/domain/use%20cases/get_current_user.dart';
 import 'package:klean/features/auth/domain/use%20cases/log_out.dart';
@@ -53,7 +52,9 @@ class LoginPageNotifier extends StateNotifier<UserEntity> {
     required WidgetRef ref,
   }) async {
     await _useCaseLoginWithGoogle(UseCaseLoginWithGoogleParams());
-    await checkCurrentuser(context: context, ref: ref);
+    if (context.mounted) {
+      await checkCurrentuser(context: context, ref: ref);
+    }
   }
 
   Future checkCurrentuser({
@@ -94,7 +95,9 @@ class LoginPageNotifier extends StateNotifier<UserEntity> {
         UseCaseVerifyOtpParams(verificationId: verificationId, otp: otp));
 
     log('checking for user');
-    await checkCurrentuser(context: context, ref: ref);
+    if (context.mounted) {
+      await checkCurrentuser(context: context, ref: ref);
+    }
   }
 
   Future updateBio({
@@ -134,12 +137,16 @@ class LoginPageNotifier extends StateNotifier<UserEntity> {
       (l) async {
         log(l.message);
         await logout(context: context, ref: ref);
-        await checkCurrentuser(context: context, ref: ref);
+        if (context.mounted) {
+          await checkCurrentuser(context: context, ref: ref);
+        }
       },
       (r) async {
         if (r.isEmpty) {
           await logout(context: context, ref: ref);
-          await checkCurrentuser(context: context, ref: ref);
+          if (context.mounted) {
+            await checkCurrentuser(context: context, ref: ref);
+          }
         } else {
           context.goNamed(RouteNames.otpNoPage, extra: r);
         }

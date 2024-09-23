@@ -8,9 +8,9 @@ import 'package:klean/features/cart/presentation/provider/filter_provider.dart';
 
 class LoadingContainer extends ConsumerWidget {
   const LoadingContainer({
-    Key? key,
+    super.key,
     required this.child,
-  }) : super(key: key);
+  });
 
   final Widget child;
 

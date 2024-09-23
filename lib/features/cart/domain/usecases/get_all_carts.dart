@@ -1,4 +1,4 @@
-import 'package:fpdart/src/either.dart';
+import 'package:fpdart/fpdart.dart';
 import 'package:klean/core/entity/cart_entity.dart';
 import 'package:klean/core/error/failure.dart';
 import 'package:klean/core/use%20case/usecase.dart';

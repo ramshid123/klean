@@ -1,8 +1,7 @@
-import 'package:fpdart/src/either.dart';
+import 'package:fpdart/fpdart.dart';
 import 'package:klean/core/entity/cart_entity.dart';
 import 'package:klean/core/error/failure.dart';
 import 'package:klean/core/use%20case/usecase.dart';
-import 'package:klean/features/cart/data/models/cart_model.dart';
 import 'package:klean/features/cart/domain/repository/repository.dart';
 
 class UseCaseUpdateCarts implements Usecase<void, UseCaseUpdateCartsParams> {

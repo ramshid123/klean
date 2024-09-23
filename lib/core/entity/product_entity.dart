@@ -1,4 +1,3 @@
-import 'package:klean/core/entity/cart_entity.dart';
 
 class ProductEntity {
   final String id;

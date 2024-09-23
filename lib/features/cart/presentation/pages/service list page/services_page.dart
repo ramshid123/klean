@@ -1,4 +1,3 @@
-import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -10,7 +9,6 @@ import 'package:klean/core/providers/user.dart';
 import 'package:klean/core/routes/route_names.dart';
 import 'package:klean/core/theme/palette.dart';
 import 'package:klean/core/widgets/common.dart';
-import 'package:klean/features/auth/presentation/provider/usecase_providers.dart';
 import 'package:klean/features/cart/presentation/pages/service%20list%20page/services_page_widgets.dart';
 import 'package:klean/features/cart/presentation/provider/cart_provider.dart';
 
@@ -77,7 +75,7 @@ class _ServicesPageState extends ConsumerState<ServicesPage> {
                 Container(
                   width: double.infinity,
                   padding: EdgeInsets.symmetric(vertical: 10.h),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: ColorConstants.liteGreenColor,
                   ),
                   child: SingleChildScrollView(
@@ -123,8 +121,8 @@ class _ServicesPageState extends ConsumerState<ServicesPage> {
                   color: Colors.white,
                   boxShadow: [
                     BoxShadow(
-                      color: Color(0xFF000000).withOpacity(0.5),
-                      offset: Offset(0, 0),
+                      color: const Color(0xFF000000).withOpacity(0.5),
+                      offset: const Offset(0, 0),
                       blurRadius: 14,
                       spreadRadius: -1,
                     ),

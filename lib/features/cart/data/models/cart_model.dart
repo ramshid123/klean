@@ -1,4 +1,3 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:klean/core/entity/cart_entity.dart';
 
 class CartModel extends CartEntity {

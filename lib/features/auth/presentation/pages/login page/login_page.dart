@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:klean/core/theme/palette.dart';
 import 'package:klean/core/widgets/common.dart';
 import 'package:klean/core/widgets/loading.dart';
-import 'package:klean/features/auth/presentation/pages/login%20page/phone%20login%20page.dart';
+import 'package:klean/features/auth/presentation/pages/login%20page/phone_login_page.dart';
 import 'package:klean/features/auth/presentation/provider/usecase_providers.dart';
 import 'package:klean/features/cart/presentation/provider/filter_provider.dart';
 
