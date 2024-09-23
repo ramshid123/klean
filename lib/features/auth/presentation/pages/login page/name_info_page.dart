@@ -36,12 +36,19 @@ class NameInfoPage extends ConsumerWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        CircleAvatar(
-                          radius: 20.r,
-                          backgroundColor: ColorConstants.greenColor,
+                        Image.asset(
+                          'assets/images/ic_launcher/ic_launcher.png',
+                          height: 50.r,
+                          width: 50.r,
                         ),
-                        kWidth(10.w),
-                        kText(text: 'Klean'),
+                        kWidth(20.w),
+                        kText(
+                          text: 'Klean',
+                          color: const Color(0xff888888),
+                          family: 'Titillium Web',
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                        ),
                       ],
                     ),
                     kHeight(100.h),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:klean/core/theme/palette.dart';
 import 'package:klean/core/widgets/common.dart';
@@ -41,7 +42,10 @@ class PhoneLoginPage extends ConsumerWidget {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Icon(Icons.clear, color: Colors.black, size: 25.r),
+                            GestureDetector(
+                                onTap: () => context.pop(),
+                                child: Icon(Icons.clear,
+                                    color: Colors.black, size: 25.r)),
                             kText(
                               text: 'Continue with Phone',
                               fontSize: 18,
@@ -53,10 +57,15 @@ class PhoneLoginPage extends ConsumerWidget {
                         ),
                       ),
                       const Spacer(),
-                      Container(
-                        height: 100.h,
-                        width: 100.w,
-                        color: ColorConstants.greenColor,
+                      // Container(
+                      //   height: 100.h,
+                      //   width: 100.w,
+                      //   color: ColorConstants.greenColor,
+                      // ),
+                      Icon(
+                        Icons.lock_open,
+                        size: 100.r,
+                        color: ColorConstants.greenColor.withOpacity(0.7),
                       ),
                       kHeight(20.h),
                       kText(

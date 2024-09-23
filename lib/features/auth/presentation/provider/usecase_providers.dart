@@ -90,11 +90,9 @@ class LoginPageNotifier extends StateNotifier<UserEntity> {
     required BuildContext context,
     required WidgetRef ref,
   }) async {
-    log('verifying otp');
     await _useCaseVerifyOtp(
         UseCaseVerifyOtpParams(verificationId: verificationId, otp: otp));
 
-    log('checking for user');
     if (context.mounted) {
       await checkCurrentuser(context: context, ref: ref);
     }

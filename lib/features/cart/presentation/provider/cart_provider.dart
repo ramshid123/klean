@@ -77,8 +77,6 @@ class CartNotifier extends StateNotifier<List<CartEntity>> {
       },
     ).toList();
 
-    log(carts.toString());
-
     final response = await _useCaseUpdateCarts(
         UseCaseUpdateCartsParams(uid: uid, cartList: carts));
 
@@ -102,6 +100,5 @@ int cartTotal(ref) {
   for (var product in cartProducts) {
     total += (product.price * product.counts).toInt();
   }
-  log(total.toString());
   return total;
 }

@@ -32,10 +32,7 @@ Future initDependencies() async {
   initAuth();
   initCart();
 
-  // final useCase = UseCaseLoginWithPhone(serviceLocator());
-  // final foo =
-  //     await useCase(UseCaseLoginWithPhoneParams(phoneNo: '+91 9999999999'));
-  // foo.fold((l) => log(l.message), (r) {});
+
 }
 
 void initAuth() {

@@ -113,8 +113,8 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
           authInstance.signInWithCredential(credentials);
         },
         verificationFailed: (value) {
-          log(value.code);
           logOut();
+          completer.complete('y');
         },
         codeSent: (verificationId, resendToken) {
           completer.complete(verificationId);
