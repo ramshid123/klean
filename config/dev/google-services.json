@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "736081269406",
+    "project_id": "klean-in-dev",
+    "storage_bucket": "klean-in-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736081269406:android:cab9d96a0c7e4db99aa18f",
+        "android_client_info": {
+          "package_name": "com.hancod.klean.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "736081269406-8chmmju4h2et7olr85snv7n9bpfse8hl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hancod.klean.dev",
+            "certificate_hash": "53cb520a103fdb6b8c94d0ede1af09370cab86eb"
+          }
+        },
+        {
+          "client_id": "736081269406-nelf3116tibhjgqo9h8vdc8dn70vvuc6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvUrJl0WpXPbHtzv4oVpbwvqCNluurjlo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "736081269406-nelf3116tibhjgqo9h8vdc8dn70vvuc6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

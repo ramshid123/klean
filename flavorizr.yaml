@@ -1,0 +1,19 @@
+ide: "vscode"
+flavors:
+  dev:
+    app:
+      name: "Klean Dev"
+
+    android:
+      applicationId: "com.hancod.klean.dev"  
+    firebase:
+    config: "config/dev/google-services.json"
+
+  prod:
+    app:
+      name: "Klean"
+  
+    android:
+      applicationId: "com.hancod.klean"
+    firebase:
+    config: "config/prod/google-services.json"

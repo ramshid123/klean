@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "140554556568",
+    "project_id": "klean-in-prod",
+    "storage_bucket": "klean-in-prod.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140554556568:android:65f24a7196fd472bf76ced",
+        "android_client_info": {
+          "package_name": "com.hancod.klean"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBwLBwaj-wRLzWUUjPq88oMJT-lfgZ9M4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
